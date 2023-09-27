@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1>E-SKETCH</h1>
-    <input type="color" name="colorName" id="cl">
-    <script src="main.js" defer></script>
+    <div class="test">
+        <div class="side">
+            <input type="color" name="colorName" id="cl" style="
+            border-radius: 3px;
+            /* width: 50px; */
+            height: 50px;
+            /* background-color: transparent; */
+            /* color: red; */
+            margin-left: 2px;">
+            <button class=" color">color mode</button>
+            <button class="mix">mix mode</button>
+            <button type="reset" class="clear">clear</button>
+            <input type="range" name="size" id="slider" min="1" max="80" aria-label="size">
+            <div class="size-show">
+                <label for=" size">size =</label>
+                <p class="n-size"></p>
+            </div>
+        </div>
+        <p id="demo"></p>
+        <script src="main.js" defer></script>
+    </div>
 </body>
+
 </html>
